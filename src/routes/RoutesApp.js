@@ -14,12 +14,11 @@ function RoutesApp(){
     return(
         <Routes>
             <Route element={<Layout />}>
-                {!token?
-                <>
-                <Route path='/login' element={<Login />}/>;
+
+                <Route path='/' element={<Login />}/>;
                 <Route path='/register' element={<Register />}/>
-                </>
-                :
+              
+            
                 <Route element={<Home/>}>
                     <Route path='/banking' element={<Banking/>}/>
                     <Route path='/plus/:cardNumber' element={<Plus/>}/>
@@ -27,7 +26,7 @@ function RoutesApp(){
                     <Route path='/history' element={<History/>}/>
                     <Route path='/addcard' element={<AddCart/>}/>
                 </Route>
-                }
+         
             </Route>
         </Routes>
     )
