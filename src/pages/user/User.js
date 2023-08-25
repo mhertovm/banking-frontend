@@ -21,7 +21,7 @@ function User(){
 
       const handle = () =>{
         localStorage.clear()
-        navigate("/")
+        navigate("/banking-frontend")
         window.location.reload()
       }
     return(
