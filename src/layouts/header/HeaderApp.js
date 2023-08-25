@@ -10,7 +10,7 @@ function HeaderApp(){
   
   return (
     <>
-    <Link to={token?'/banking':"/"}>
+    <Link to={token?'/banking':"/banking-frontend"}>
       <h2 className='Header-logo' style={{fontFamily: 'sans-serif', color:'orange', fontSize:"20px"}}>ID BANK</h2>
     </Link>
     <div className='Header-link-container'>
@@ -19,7 +19,7 @@ function HeaderApp(){
       {!token ?
       <>
       <Link className='Header-link' to={"/register"}>Register</Link>|
-      <Link className='Header-link' to={"/"}>Login </Link>
+      <Link className='Header-link' to={"/banking-frontend"}>Login </Link>
       </>
       : false
       }

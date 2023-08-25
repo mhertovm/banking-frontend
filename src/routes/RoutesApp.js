@@ -17,15 +17,15 @@ function RoutesApp(){
                 {!token?
                 <>
                 <Route path='/banking-frontend' element={<Login />}/>;
-                <Route path='/banking-frontend/register' element={<Register />}/>
+                <Route path='/register' element={<Register />}/>
                 </>
                 :
                 <Route element={<Home/>}>
-                    <Route path='/banking-frontend/banking' element={<Banking/>}/>
-                    <Route path='/banking-frontend/plus/:cardNumber' element={<Plus/>}/>
-                    <Route path='/banking-frontend/transfer' element={<Transfer/>}/>
-                    <Route path='/banking-frontend/history' element={<History/>}/>
-                    <Route path='/banking-frontend/addcard' element={<AddCart/>}/>
+                    <Route path='/banking' element={<Banking/>}/>
+                    <Route path='/plus/:cardNumber' element={<Plus/>}/>
+                    <Route path='/transfer' element={<Transfer/>}/>
+                    <Route path='/history' element={<History/>}/>
+                    <Route path='/addcard' element={<AddCart/>}/>
                 </Route>
                 }
             </Route>

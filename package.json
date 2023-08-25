@@ -1,6 +1,6 @@
 {
   "homepage": "https://mhertovm.github.io/banking-frontend",
-  "name": "frontend-banking",
+  "name": "banking-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
