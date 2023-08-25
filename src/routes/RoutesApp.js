@@ -16,7 +16,7 @@ function RoutesApp(){
             <Route element={<Layout />}>
                 {!token?
                 <>
-                <Route path='https://mhertovm.github.io/banking-frontend/' element={<Login />}/>;
+                <Route path='/login' element={<Login />}/>;
                 <Route path='/register' element={<Register />}/>
                 </>
                 :
